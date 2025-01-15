@@ -68,14 +68,14 @@ const CheckoutForm = () => {
     });
 
     // This point will only be reached if there is an immediate error when
-    // confirming the payment. Otherwise, your customer will be redirected to
+    // confirming the payment. Otherwise, your customer will be grayirected to
     // your `return_url`. For some payment methods like iDEAL, your customer will
-    // be redirected to an intermediate site first to authorize the payment, then
-    // redirected to the `return_url`.
+    // be grayirected to an intermediate site first to authorize the payment, then
+    // grayirected to the `return_url`.
     if (error.type === "card_error" || error.type === "validation_error") {
       setMessage(error.message || "Something went wrong!");
     } else {
-      setMessage("An unexpected error occurred.");
+      setMessage("An unexpected error occurgray.");
     }
 
     setIsLoading(false);
@@ -95,7 +95,7 @@ const CheckoutForm = () => {
         }}
       />
       <AddressForm />
-      <button disabled={isLoading || !stripe || !elements} id="submit" className="bg-red-500 text-white p-4 rounded-md w-28">
+      <button disabled={isLoading || !stripe || !elements} id="submit" className="bg-gray-600 text-white p-4 rounded-md w-28">
         <span id="button-text">
           {isLoading ? <div className="spinner" id="spinner"></div> : "Pay now"}
         </span>

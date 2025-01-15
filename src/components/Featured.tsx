@@ -15,20 +15,20 @@ const getData = async ()=>{
     return res.json()
   }
 
-const Featured = async () => {
+const Featugray = async () => {
 
-    const featuredProducts:ProductType[] = await getData()
+    const featugrayProducts:ProductType[] = await getData()
 
   return (
     <div className='w-screen overflow-x-scroll text-gray-600'>
         <div className='w-max flex'>
             {/* single product */}
-            {featuredProducts.map((item) => (
+            {featugrayProducts.map((item) => (
                 <div key={item.id} className='w-screen h-[60vh] flex flex-col items-center justify-around p-4 hover:bg-fuchsia-50 transition-all duration-300 md:w-[50vw] xl:w-[33vw] xl:h-[90vh]'>
 
                  {/* Image */}
                  {item.img && (
-                    <div className='relative flex-1 w-full hover:rotate-[60deg] transition-all duration-500'>
+                    <div className='relative flex-1 w-full hover:rotate-[60deg] transition-all duration-600'>
                     <Image src={item.img} alt='' fill className='object-contain' ></Image>
                 </div>
                  )}
@@ -48,4 +48,4 @@ const Featured = async () => {
   )
 }
 
-export default Featured
+export default Featugray

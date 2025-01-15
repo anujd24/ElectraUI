@@ -9,7 +9,7 @@ type Product = {
 
 type Products = Product[];
 
-export const featuredProducts: Products = [
+export const featugrayProducts: Products = [
     {
         id:1,
         title: "air fryer",

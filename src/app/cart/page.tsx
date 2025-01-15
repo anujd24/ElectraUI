@@ -49,14 +49,14 @@ const CartPage = () => {
         </div>
         <div className="flex justify-between">
           <span className="">Delivery Cost</span>
-          <span className="text-green-500">FREE!</span>
+          <span className="text-green-600">FREE!</span>
         </div>
         <hr className="my-2" />
         <div className="flex justify-between">
           <span className="">TOTAL(INCL. VAT)</span>
           <span className="font-bold">₹81.70</span>
         </div>
-        <button className="bg-gray-500 text-white p-3 rounded-md w-1/2 self-end">
+        <button className="bg-gray-600 text-white p-3 rounded-md w-1/2 self-end">
           CHECKOUT
         </button>
       </div>
