@@ -5,7 +5,6 @@ import Notification from "@/components/notification";
 import Navbar from "@/components/navbar";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer";
-import AuthProvider from "@/components/AuthProvider";
 import QueryProvider from "@/components/QueryProvider";
 
 
@@ -24,7 +23,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AuthProvider>
           <QueryProvider>
             <div>
               <Notification />
@@ -34,7 +32,6 @@ export default function RootLayout({
               
               </div>
             </QueryProvider>
-        </AuthProvider>
       </body>
     </html>
   );
