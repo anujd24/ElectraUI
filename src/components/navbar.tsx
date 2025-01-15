@@ -3,8 +3,6 @@ import Menu from './menu'
 import Link from 'next/link'
 import Image from 'next/image'
 import CartIcon from './cartIcon'
-import UserLinks from './UserLinks'
-
 const Navbar = () => {
 
     const user = false;
@@ -34,8 +32,6 @@ const Navbar = () => {
                 <Image src="/phone.png" alt='' width={20} height={20}></Image>
                 <span>999888777</span>    
             </div>
-
-            <UserLinks/>
             <CartIcon/>
         </div>
     </div>
