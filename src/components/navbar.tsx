@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className='hidden md:flex gap-4 items-center justify-end flex-1'>
             <div className='md:absolute top-3 r-2 lg:static flex items-center gap-2 cursor-pointer bg-gray-600 px-1 rounded-md text-white'>
                 <Image src="/phone.png" alt='' width={20} height={20}></Image>
-                <span>9998887774</span>    
+                <span>999888777</span>    
             </div>
 
             <UserLinks/>
