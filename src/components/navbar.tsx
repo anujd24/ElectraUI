@@ -15,8 +15,10 @@ const Navbar = () => {
         <Link href="/">Contact</Link>
       </div>
       {/* LOGO */}
-      <div className="text-xl md:font-bold flex-1 md:text-center">
-        <Link href="/">Electra</Link>
+      <div className="text-xl md:font-bold flex-1 md:text-center pt-1">
+      <Link href={"/"}>
+      <Image src="/Electra.png" alt="" width={95} height={100} />
+       </Link>
       </div>
       {/* MOBILE MENU */}
       <div className="md:hidden">
@@ -26,7 +28,7 @@ const Navbar = () => {
       <div className="hidden md:flex gap-4 items-center justify-end flex-1">
         <div className="md:absolute top-3 r-2 lg:static flex items-center gap-2 cursor-pointer bg-stone-600 px-1 rounded-md">
           <Image src="/phone.png" alt="" width={20} height={20} />
-          <span className="text-white">123 456 78</span>
+          <span className="text-white">83848322</span>
         </div>
         {!user ? (
           <Link href="/login">Login</Link>
