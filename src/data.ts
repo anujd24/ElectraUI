@@ -429,9 +429,6 @@ export const Phones: Products = [
     }
 ];
 
-
-
-
 export const singleProduct: Product = 
     {
       id: 1,
