@@ -1,4 +1,6 @@
 import { laptops } from "@/data";
+import { Phones } from "@/data";
+import { TV } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -17,7 +19,7 @@ const CategoryPage = () => {
           {/* TEXT CONTAINER */}
           <div className="flex items-center justify-between font-bold">
             <h1 className="text-2xl uppercase p-2">{item.title}</h1>
-            <h2 className="group-hover:hidden text-xl">${item.price}</h2>
+            <h2 className="group-hover:hidden text-xl">₹{item.price}</h2>
             <button className="hidden group-hover:block uppercase bg-gray-600 text-white p-2 rounded-md">Add to Cart</button>
           </div>
         </Link>
