@@ -219,6 +219,112 @@ export const laptops: Products = [
     }
 ]
 
+export const TV: Products = [
+    {
+        id: 1,
+        title: "Samsung Smart LED TV",
+        desc: "Samsung 43-inch Smart LED TV with 4K Ultra HD resolution, HDR support, built-in streaming apps, and voice control.",
+        img: "/samsungTv.jpg",
+        price: 35000,
+        options: [
+            {
+                title: "Black",
+                additionalPrice: 0,
+            },
+            {
+                title: "Gray",
+                additionalPrice: 1000,
+            }
+        ]
+    },
+    {
+        id: 2,
+        title: "LG OLED TV 55A1",
+        desc: "LG 55-inch OLED Smart TV with AI ThinQ, 4K resolution, Dolby Vision IQ, and WebOS platform.",
+        img: "/lgOled.jpg",
+        price: 72000,
+        options: [
+            {
+                title: "Black",
+                additionalPrice: 0,
+            },
+            {
+                title: "Titan Gray",
+                additionalPrice: 2000,
+            }
+        ]
+    },
+    {
+        id: 3,
+        title: "Sony Bravia XR X90J",
+        desc: "Sony 50-inch Bravia XR X90J TV with Cognitive Processor XR, 4K resolution, Full Array LED, and Google TV.",
+        img: "/sonyBravia.jpg",
+        price: 63000,
+        options: [
+            {
+                title: "Black",
+                additionalPrice: 0,
+            },
+            {
+                title: "Silver",
+                additionalPrice: 1500,
+            }
+        ]
+    },
+    {
+        id: 4,
+        title: "TCL QLED TV 55C715",
+        desc: "TCL 55-inch QLED Smart TV with 4K UHD resolution, HDR 10+, Android TV OS, and Dolby Atmos support.",
+        img: "/tclQled.jpg",
+        price: 54000,
+        options: [
+            {
+                title: "Black",
+                additionalPrice: 0,
+            },
+            {
+                title: "Metallic Gray",
+                additionalPrice: 1000,
+            }
+        ]
+    },
+    {
+        id: 5,
+        title: "Panasonic LED Smart TV",
+        desc: "Panasonic 32-inch LED Smart TV with HD Ready resolution, built-in Chromecast, and dynamic surround sound.",
+        img: "/panasonicTv.jpg",
+        price: 22000,
+        options: [
+            {
+                title: "Black",
+                additionalPrice: 0,
+            },
+            {
+                title: "White",
+                additionalPrice: 500,
+            }
+        ]
+    },
+    {
+        id: 6,
+        title: "OnePlus Y1S Pro",
+        desc: "OnePlus 43-inch Smart LED TV with 4K UHD resolution, Gamma Engine, Dolby Audio, and Android TV OS.",
+        img: "/oneplusTv.jpg",
+        price: 30000,
+        options: [
+            {
+                title: "Black",
+                additionalPrice: 0,
+            },
+            {
+                title: "Titan Gray",
+                additionalPrice: 1500,
+            }
+        ]
+    }
+];
+
+
 export const singleProduct: Product = 
     {
       id: 1,
