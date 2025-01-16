@@ -4,7 +4,7 @@ import React from "react";
 
 const Featured = () => {
   return (
-    <div className="w-screen overflow-x-scroll text-gray-600 scrollbar-hide">
+    <div className="w-screen overflow-x-scroll overflow-hidden text-gray-600 scrollbar-hide">
       {/* WRAPPER */}
       <div className="w-max flex">
         {/* SINGLE ITEM */}
