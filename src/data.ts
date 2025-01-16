@@ -324,6 +324,113 @@ export const TV: Products = [
     }
 ];
 
+export const Phones: Products = [
+    {
+        id: 1,
+        title: "Samsung Galaxy S23",
+        desc: "Samsung Galaxy S23 with 6.1-inch Dynamic AMOLED 2X Display, Snapdragon 8 Gen 2, 8GB RAM, and 128GB storage.",
+        img: "/samsungS23.jpg",
+        price: 74999,
+        options: [
+            {
+                title: "Phantom Black",
+                additionalPrice: 0,
+            },
+            {
+                title: "Cream",
+                additionalPrice: 2000,
+            }
+        ]
+    },
+    {
+        id: 2,
+        title: "Apple iPhone 14 Pro",
+        desc: "Apple iPhone 14 Pro with 6.1-inch Super Retina XDR Display, A16 Bionic chip, 6GB RAM, and 128GB storage.",
+        img: "/iphone14pro.jpg",
+        price: 129900,
+        options: [
+            {
+                title: "Deep Purple",
+                additionalPrice: 0,
+            },
+            {
+                title: "Gold",
+                additionalPrice: 4000,
+            }
+        ]
+    },
+    {
+        id: 3,
+        title: "OnePlus 11R",
+        desc: "OnePlus 11R 5G with 6.74-inch Super Fluid AMOLED Display, Snapdragon 8+ Gen 1, 16GB RAM, and 256GB storage.",
+        img: "/oneplus11r.jpg",
+        price: 44999,
+        options: [
+            {
+                title: "Sonic Black",
+                additionalPrice: 0,
+            },
+            {
+                title: "Galactic Silver",
+                additionalPrice: 1500,
+            }
+        ]
+    },
+    {
+        id: 4,
+        title: "Google Pixel 7 Pro",
+        desc: "Google Pixel 7 Pro with 6.7-inch LTPO OLED Display, Google Tensor G2 chip, 12GB RAM, and 128GB storage.",
+        img: "/pixel7pro.jpg",
+        price: 84999,
+        options: [
+            {
+                title: "Obsidian Black",
+                additionalPrice: 0,
+            },
+            {
+                title: "Snow",
+                additionalPrice: 2500,
+            }
+        ]
+    },
+    {
+        id: 5,
+        title: "Xiaomi 13 Pro",
+        desc: "Xiaomi 13 Pro with 6.73-inch AMOLED Display, Snapdragon 8 Gen 2, 12GB RAM, and 256GB storage.",
+        img: "/xiaomi13pro.jpg",
+        price: 79999,
+        options: [
+            {
+                title: "Ceramic Black",
+                additionalPrice: 0,
+            },
+            {
+                title: "Ceramic White",
+                additionalPrice: 2000,
+            }
+        ]
+    },
+    {
+        id: 6,
+        title: "Realme GT 3",
+        desc: "Realme GT 3 with 6.74-inch AMOLED Display, Snapdragon 8+ Gen 1, 16GB RAM, and 256GB storage.",
+        img: "/realmeGT3.jpg",
+        price: 44999,
+        options: [
+            {
+                title: "Booster Black",
+                additionalPrice: 0,
+            },
+            {
+                title: "Pulse White",
+                additionalPrice: 1500,
+            }
+        ]
+    }
+];
+
+
+
 
 export const singleProduct: Product = 
     {
