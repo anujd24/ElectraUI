@@ -11,13 +11,15 @@ const categoryData: Record<string, typeof laptops | typeof Phones | typeof TV> =
   tv: TV,
 };
 
+// Define correct type for props
 interface CategoryPageProps {
-  params: Awaited<{ category: string }>;
+  params: { category: string }; 
 }
 
-const CategoryPage = async ({ params }: CategoryPageProps) => {
+// Ensure function is marked as an async component
+const CategoryPage = ({ params }: CategoryPageProps) => {
   const { category } = params;
-  const products = categoryData[category?.toLowerCase()] || [];
+  const products = categoryData[category.toLowerCase()] || [];
 
   return (
     <div className="flex flex-wrap text-gray-600">
@@ -55,7 +57,8 @@ const CategoryPage = async ({ params }: CategoryPageProps) => {
 
 export default CategoryPage;
 
-export async function generateStaticParams() {
+// Ensure correct type for dynamic segments
+export async function generateStaticParams(): Promise<{ category: string }[]> {
   return [
     { category: "laptops" },
     { category: "phones" },
