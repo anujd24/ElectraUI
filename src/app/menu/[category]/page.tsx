@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-// Category data mapping for easy access
 const categoryData: Record<string, typeof laptops | typeof Phones | typeof TV> = {
   laptops,
   phones: Phones,
@@ -13,12 +12,12 @@ const categoryData: Record<string, typeof laptops | typeof Phones | typeof TV> =
 };
 
 interface CategoryPageProps {
-  params: { category: string }; // Use 'params' for dynamic segments
+  params: { category: string };
 }
 
-const CategoryPage = ({ params }: CategoryPageProps) => {
+const CategoryPage = async ({ params }: { params: { category: string } }) => {
   const { category } = params;
-  const products = categoryData[category.toLowerCase()] || [];
+  const products = categoryData[category?.toLowerCase()] || [];
 
   return (
     <div className="flex flex-wrap text-gray-600">
@@ -29,13 +28,11 @@ const CategoryPage = ({ params }: CategoryPageProps) => {
             href={`/product/${item.id}`}
             key={item.id}
           >
-            {/* IMAGE CONTAINER */}
             {item.img && (
               <div className="relative h-[80%]">
                 <Image src={item.img} alt={item.title} fill className="object-contain" />
               </div>
             )}
-            {/* TEXT CONTAINER */}
             <div className="flex items-center justify-between font-bold">
               <h1 className="text-2xl uppercase p-2">{item.title}</h1>
               <h2 className="group-hover:hidden text-xl">₹{item.price}</h2>
@@ -56,7 +53,6 @@ const CategoryPage = ({ params }: CategoryPageProps) => {
 
 export default CategoryPage;
 
-// Dynamic segment configuration
 export async function generateStaticParams() {
   return [
     { category: "laptops" },
