@@ -459,15 +459,15 @@ export const menu: Menu = [
     {
         id:1,
         slug: "Laptops",
-        title:"Dell Inspiron 15",
+        title:"Laptop",
         desc:"start your coding career with Dell Inspiron 15!",
-        img:"/menuLappy.jpg",
+        img:"/laptopBG.jpeg",
         color:"grey"
     },
     {
         id:2,
         slug: "Television",
-        title:"Home Theatre",
+        title:"Television",
         desc:"Watch your fav shows like in the theatres!",
         img:"/menuTv.jpg",
         color:"Black"
@@ -475,7 +475,7 @@ export const menu: Menu = [
     {
         id:3,
         slug: "Phone",
-        title:"Vivo Y15s",
+        title:"Phone",
         desc:"Be yourself with Vivo Y15s",
         img:"/menuPhone.jpg",
         color:"Blue"

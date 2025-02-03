@@ -9,13 +9,24 @@ const MenuPage = () => {
         <Link
           href={`/menu/${category.slug}`}
           key={category.id}
-          className="w-full h-1/3 bg-cover p-8 md:h-1/2 z-50"
-          style={{ backgroundImage: `url(${category.img})` }}
+          className="relative w-full h-1/3 md:h-1/2 group overflow-hidden"
         >
-          <div className={`text-${category.color} w-1/2`}>
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${category.img})` }}
+          ></div>
+
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-40 transition duration-300"></div>
+
+          {/* Content on Top */}
+          <div className="relative z-10 text-white w-1/2 p-8">
             <h1 className="uppercase font-bold text-3xl">{category.title}</h1>
             <p className="text-sm my-8">{category.desc}</p>
-            <button className={`hidden 2xl:block bg-${category.color} text-${category.color === "black" ? "white" : "gray-600"} py-2 px-4 rounded-md`}>Explore</button>
+            <button className="hidden 2xl:block bg-white text-black py-2 px-4 rounded-md">
+              Explore
+            </button>
           </div>
         </Link>
       ))}
