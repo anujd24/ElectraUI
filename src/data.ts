@@ -469,7 +469,7 @@ export const menu: Menu = [
         slug: "Television",
         title:"Television",
         desc:"Watch your fav shows like in the theatres!",
-        img:"/menuTv.jpg",
+        img:"/tvBG.jpg",
         color:"Black"
     },
     {
@@ -477,7 +477,7 @@ export const menu: Menu = [
         slug: "Phone",
         title:"Phone",
         desc:"Be yourself with Vivo Y15s",
-        img:"/menuPhone.jpg",
+        img:"/phoneBG.jpg",
         color:"Blue"
     },
 ]    
