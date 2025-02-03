@@ -11,9 +11,6 @@ const categoryData: Record<string, typeof laptops | typeof Phones | typeof TV> =
   tv: TV,
 };
 
-interface CategoryPageProps {
-  params: { category: string };
-}
 
 const CategoryPage = async ({ params }: { params: { category: string } }) => {
   const { category } = params;
