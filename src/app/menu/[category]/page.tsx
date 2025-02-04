@@ -16,7 +16,7 @@ interface CategoryPageProps {
   params: { category: string }; 
 }
 
-// Ensure function is marked as an async component
+// Remove the async keyword since the component is not performing async operations
 const CategoryPage = ({ params }: CategoryPageProps) => {
   const { category } = params;
   const products = categoryData[category.toLowerCase()] || [];
