@@ -11,11 +11,14 @@ const categoryData: Record<string, typeof laptops | typeof Phones | typeof TV> =
   tv: TV,
 };
 
-interface CategoryPageProps {
-  params: Record<string, string>;
-}
+type CategoryPageProps = {
+  params: {
+    category: string;
+  };
+};
 
-const CategoryPage = ({ params }: CategoryPageProps) => {
+
+export default function CategoryPage ({ params }: CategoryPageProps)  {
   const category = params?.category?.toLowerCase();
   const products = categoryData[category] ?? [];
 
@@ -53,7 +56,6 @@ const CategoryPage = ({ params }: CategoryPageProps) => {
   );
 };
 
-export default CategoryPage;
 
 export async function generateStaticParams(): Promise<{ category: string }[]> {
   return [
