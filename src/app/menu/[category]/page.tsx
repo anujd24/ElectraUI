@@ -11,15 +11,13 @@ const categoryData: Record<string, typeof laptops | typeof Phones | typeof TV> =
   tv: TV,
 };
 
-// Define correct type for props
 interface CategoryPageProps {
-  params: { category: string }; 
+  params: Record<string, string>;
 }
 
-// Remove the async keyword since the component is not performing async operations
 const CategoryPage = ({ params }: CategoryPageProps) => {
-  const { category } = params;
-  const products = categoryData[category.toLowerCase()] || [];
+  const category = params?.category?.toLowerCase();
+  const products = categoryData[category] ?? [];
 
   return (
     <div className="flex flex-wrap text-gray-600">
@@ -57,7 +55,6 @@ const CategoryPage = ({ params }: CategoryPageProps) => {
 
 export default CategoryPage;
 
-// Ensure correct type for dynamic segments
 export async function generateStaticParams(): Promise<{ category: string }[]> {
   return [
     { category: "laptops" },
