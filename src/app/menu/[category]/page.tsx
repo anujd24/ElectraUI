@@ -12,13 +12,10 @@ const categoryData: Record<string, typeof laptops | typeof Phones | typeof TV> =
 };
 
 type CategoryPageProps = {
-  params: {
-    category: string;
-  };
+  params: { category: string };
 };
 
-
-export default function CategoryPage ({ params }: CategoryPageProps)  {
+export default function CategoryPage({ params }: CategoryPageProps) {
   const category = params?.category?.toLowerCase();
   const products = categoryData[category] ?? [];
 
@@ -54,10 +51,9 @@ export default function CategoryPage ({ params }: CategoryPageProps)  {
       )}
     </div>
   );
-};
+}
 
-
-export async function generateStaticParams(): Promise<{ category: string }[]> {
+export async function generateStaticParams() {
   return [
     { category: "laptops" },
     { category: "phones" },
