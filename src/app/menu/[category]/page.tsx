@@ -1,6 +1,4 @@
 import { laptops } from "@/data";
-import { Phones } from "@/data";
-import { TV } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
