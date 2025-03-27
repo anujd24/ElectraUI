@@ -38,10 +38,4 @@ const categoryPage = () => {
   );
 };
 
-export async function generateStaticParams() {
-  return [
-    { category: "laptops" },
-    { category: "phones" },
-    { category: "tv" },
-  ];
-}
+export default categoryPage;
