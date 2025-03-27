@@ -5,24 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const categoryData: Record<string, typeof laptops | typeof Phones | typeof TV> = {
-  laptops,
-  phones: Phones,
-  tv: TV,
-};
-
-type CategoryPageProps = {
-  params: { category: string };
-};
-
-export default function CategoryPage({ params }: CategoryPageProps) {
-  const category = params?.category?.toLowerCase();
-  const products = categoryData[category] ?? [];
-
+const categoryPage = () => {
   return (
     <div className="flex flex-wrap text-gray-600">
-      {products.length > 0 ? (
-        products.map((item) => (
+      {laptops.length > 0 ? (
+        laptops.map((item) => (
           <Link
             className="w-full h-[60vh] border-r-2 border-b-2 border-gray-600 sm:w-1/2 lg:w-1/3 p-4 flex flex-col justify-between group odd:bg-fuchsia-50"
             href={`/product/${item.id}`}
@@ -51,7 +38,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
       )}
     </div>
   );
-}
+};
 
 export async function generateStaticParams() {
   return [
